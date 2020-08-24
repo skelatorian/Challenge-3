@@ -1,13 +1,12 @@
 // Assignment code here
 var generateBtn = document.querySelector("#generate");
 
-// Get references to the #generate element
-//var generateBtn = document.querySelector("#generate");
+//Get references to the #generate element
 
 //Determining the Arrays (4)
 
 var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-var specialChar = ["!","@","#","$","%","^","&","*","(",")","-","+","/","<",">","?"];
+var specialChar = ["#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","^","`","{","|","}","~"];
 var alphaLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var alphaUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
@@ -36,12 +35,10 @@ function generatePassword() {
 
 while(confirmLength <=8 || confirmLength >=128) {
   // alert("The password length must be between 8-128 characters. Try again.");
+  alert("The password length must be between 8-128 characters. Try again.");
   var confirmLength = (prompt("How many characters would you like your password to contain?"));
-  if(confirmLength == null || confirmLength==""){
-    alert("can't leave empty");
-    return false;
-} 
-}
+  } 
+
 
 
 
@@ -104,8 +101,6 @@ function writePassword() {
   passwordText.value = password;
 
 }
-//AAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHH THIS SHIT IS CONFUSINGgGGgGGgGg im gonna go cry brb
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
