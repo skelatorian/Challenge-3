@@ -20,12 +20,19 @@ var confirmLowerCase;
 var confirmUpperCase;
 //s this all we need?????
 
-// Throw a promp next
+// Throw a promp next to confirm user how many characters they want for their password.
+function generatePassword() {
+  var confirmLength = (prompt("How many characters would you like your password to contain?"));
 
-//loop back if the users inputs outside the parameter
+//loop back if the users inputs outside the parameter with a message here
 
+while(confirmLength <= 8 || confirmLength >= 128) {
+  alert("The password length must be between 8-128 characters. Try again.");
+  var confirmLength = (prompt("How many characters would you like your password to contain?"));
+  } 
 
-
+//User alert to confirm with the user how many characters they will have.
+alert('Your password will ahve ${confirmLength} characters');
 
 
 
@@ -51,3 +58,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+}
