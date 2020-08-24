@@ -1,7 +1,7 @@
 # Password Generator Starter Code
 ## Preview Of The Project:
 
-![](images/PWGP.png)
+![](/assets/images/PWGP.png)
 
 
 **Acceptance Criteria**
