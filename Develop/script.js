@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+//var generateBtn = document.querySelector("#generate");
 
 //Determining the Arrays (4)
 
@@ -20,17 +20,30 @@ var confirmLowerCase;
 var confirmUpperCase;
 //s this all we need?????
 
+//error variables
+// var validValue = true;
+
+//validate function
+
+
 // Throw a promp next to confirm user how many characters they want for their password.
 function generatePassword() {
   var confirmLength = (prompt("How many characters would you like your password to contain?"));
+  
 
 //loop back if the users inputs outside the parameter with a message here
 //fix the bug where the user can type in "erugihj" and it will go through.. or maybe you aren't advanced enuogh to make that happen..?
 
 while(confirmLength <=8 || confirmLength >=128) {
-  alert("The password length must be between 8-128 characters. Try again.");
+  // alert("The password length must be between 8-128 characters. Try again.");
   var confirmLength = (prompt("How many characters would you like your password to contain?"));
-  } 
+  if(confirmLength == null || confirmLength==""){
+    alert("can't leave empty");
+    return false;
+} 
+}
+
+
 
 //User alert to confirm with the user how many characters they will have.
   alert(`Your password will have ${confirmLength} characters`);
