@@ -1,5 +1,5 @@
 # Password Generator Starter Code
-## Preview of the project:
+## Preview Of The Project:
 
 ![](images/PWGP.png)
 
