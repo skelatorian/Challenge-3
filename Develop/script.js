@@ -32,8 +32,7 @@ while(confirmLength <= 8 || confirmLength >= 128) {
   } 
 
 //User alert to confirm with the user how many characters they will have.
-alert('Your password will ahve ${confirmLength} characters');
-
+alert(`Your password will have ${confirmLength} characters`);
 
 
 
