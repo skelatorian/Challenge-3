@@ -3,6 +3,8 @@
 
 ![](/assets/images/PWGP.png)
 
+**Delpoyed URL**
+https://skelatorian.github.io/Challenge-3/
 
 **Acceptance Criteria**
 * GIVEN I need a new, secure password
