@@ -1,11 +1,6 @@
 # Password Generator Starter Code
 
-<<<<<<< HEAD
-![](images/PWGP.png)
-=======
-PREVIEW:
-
->>>>>>> f11d4872438c904e7b335b4ad1b19025ae6c5567
+(images/PWGP.png)
 
 I made this repo for my Password Generator Challenge.
 
