@@ -25,7 +25,7 @@ function generatePassword() {
   var confirmLength = (prompt("How many characters would you like your password to contain?"));
 
 //loop back if the users inputs outside the parameter with a message here
-//fix the bug where the user can type in "erugihj" and it will go through
+//fix the bug where the user can type in "erugihj" and it will go through.. or maybe you aren't advanced enuogh to make that happen..?
 
 while(confirmLength <=8 || confirmLength >=128) {
   alert("The password length must be between 8-128 characters. Try again.");
@@ -91,7 +91,8 @@ function writePassword() {
   passwordText.value = password;
 
 }
-//AAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+//AAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHH THIS SHIT IS CONFUSINGgGGgGGgGg im gonna go cry brb
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
